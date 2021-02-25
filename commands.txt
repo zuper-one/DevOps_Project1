@@ -1,0 +1,16 @@
+## this is to build container on local machine
+docker build -t zuperone/dockerwebapp .
+
+## this is to check to see if docker is running on local machine
+docker images
+
+## is is to initiate container and make accessable thru browser
+docker run -p 49160:8080 zuperone/dockerwebapp
+
+## Address to check to webapp output
+http://localhost:49160
+
+
+Issue: Cannot run program - ho hup
+
+  https://stackoverflow.com/questions/45140614/jenkins-pipeline-sh-fail-with-cannot-run-program-nohup-on-windows
